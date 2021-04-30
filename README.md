@@ -24,6 +24,7 @@ Get STRING_NAME from here:
 
 #Thanks To [Piro sir](https://t.me/InukaASiTH)
 <h2 align="centre" 💜Thanks To [Piro sir](https://t.me/InukaASiTH)💜</h3>
+
 ### Mandatory Vars.
 
 - Some Of The Mandatory Vars Are :-
