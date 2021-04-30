@@ -21,4 +21,16 @@ COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
-
+def get_str_key(name, required=False):
+    if name in DEFAULTS:
+        default = DEFAULTS[name]
+    else:
+        default = None
+    if not (data := env.str(name, default=default)) and not required:
+        log.warn("No str key: " + name)
+        return None
+    elif not data:
+        log.critical("No str key: " + name)
+        sys.exit(2)
+    else:
+        return data
