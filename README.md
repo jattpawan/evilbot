@@ -22,7 +22,7 @@ Get STRING_NAME from here:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://repl.it/@pawanjatt/evilmusicbot)
 
-#Thanks To [Piro sir](https://t.me/InukaASiTH)
+ Thanks To [Piro sir](https://t.me/InukaASiTH)
 
 ### Mandatory Vars.
 
