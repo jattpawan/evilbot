@@ -1,6 +1,5 @@
 import os
 import sys
-from envparse import env
 from os import getenv
 from dotenv import load_dotenv
 from requests import get
