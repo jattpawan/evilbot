@@ -16,8 +16,6 @@ from config import HEROKU_API_KEY, HEROKU_APP_NAME
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
 
-HEROKU_API_KEY = config.HEROKU_API_KEY
-HEROKU_APP_NAME = config.HEROKU_APP_NAME
 GIT_REPO_NAME = "evilbot"
 UPSTREAM_REPO_URL = "https://github.com/jattpawan/evilbot"
 
