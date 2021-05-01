@@ -17,4 +17,3 @@ future
 psutil
 wget
 gitpython
-envparse
