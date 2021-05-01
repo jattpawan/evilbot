@@ -74,12 +74,12 @@ async def upstream(ups):
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_updateme = True
-        repo.create_head('main', origin.refs.master)
+        repo.create_head('Testing-1', origin.refs.master)
         repo.heads.master.set_tracking_branch(origin.refs.master)
         repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != 'main':
+    if ac_br != 'Testing-1':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
@@ -134,7 +134,7 @@ async def upstream(ups):
         heroku_app = None
         heroku_applications = heroku.apps()
         if not config.HEROKU_APP_NAME:
-            await ups.edit('`Please set up the HEROKU_APP_NAME configiable to be able to update Hêllẞø†.`')
+            await ups.edit('`Please set up the HEROKU_APP_NAME configiable to be able to update EviLẞø†.`')
             repo.__del__()
             return
         for app in heroku_applications:
