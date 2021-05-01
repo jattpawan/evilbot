@@ -41,5 +41,13 @@
       "required": true,
       "value": "10"
     }
+    "HEROKU_APIKEY": {
+      "description": "very important for !update command to make javes up-to-date , get it from 'https://dashboard.heroku.com/account.",
+      "value": ""   
+    },
+    "HEROKU_APPNAME": {
+      "description": "enter app name again here, very important for !update command to make javes up-to-date ,",
+      "value": ""     
+     },
   }
 }
