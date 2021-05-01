@@ -11,9 +11,6 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-
-from userbot import CMD_HELP, bot 
-from userbot import bot as borg
 from config import *
 config=Config
 
