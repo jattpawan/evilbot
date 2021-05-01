@@ -3,6 +3,7 @@ import sys
 from envparse import env
 from os import getenv
 from dotenv import load_dotenv
+from requests import get
 
 load_dotenv()
 
@@ -19,3 +20,8 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+
+    HEROKU_API_KEY = os.environ.get("HEROKU_APIKEY", None)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APPNAME", None)
+    HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
+    HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", None)
