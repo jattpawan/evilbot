@@ -11,7 +11,7 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-from config import *
+from config import HEROKU_API_KEY, HEROKU_APP_NAME
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
