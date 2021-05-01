@@ -40,7 +40,7 @@
       "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
       "value": "10"
-    }
+    },
     "HEROKU_APIKEY": {
       "description": "very important for !update command to make javes up-to-date , get it from 'https://dashboard.heroku.com/account.",
       "value": ""   
